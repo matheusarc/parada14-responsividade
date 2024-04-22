@@ -1,0 +1,103 @@
+body{
+    background-image: url(../assets/bg01-img.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px 4px rgba(255, 255, 0, 0.39);
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.1em;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header h1{
+    border-bottom: 1px solid black;
+}
+.banner img{
+    width: 100%;
+    border-top: 2px solid yellow;
+    border-bottom: 2px solid yellow;
+}
+.content-01{
+    display: flex;
+    text-align: justify;
+    gap: 25px;
+    margin: 5px;
+}
+.box{
+    width: 640px;
+    text-align: justify;
+}
+.content-01-img{
+    width: 260px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.box-img{
+    width: 150px;
+    margin: 30px;
+    transition: .8s;
+}
+.box-img3{
+    width: 170px;
+    margin: 40px;
+    transition: .8s;
+}
+.box-img:hover{
+    width: 160px;
+    background-color: hwb(0 0% 100% / 0.400);
+    border: 3px solid sandybrown;
+}
+.box-img3:hover{
+    width: 190px;
+    background-color: hwb(0 0% 100% / 0.400);
+    border: 3px solid sandybrown;
+}
+
+/* RESPONSIVIDADE TABLET */
+@media screen and (max-width: 1024px){
+    .main{
+        background-color: white;
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 20px 4px rgba(255, 255, 0, 0.39);
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 1.1em;
+    }
+}
+/* RESPONSIVIDADE SMARTPHONE */
+@media screen and (max-width: 720px){
+    .main{
+        background-color: white;
+        width: 100%;
+        margin: auto;
+        margin-top: 10px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 20px 4px rgba(255, 255, 0, 0.39);
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 1.1em;
+    }
+    .content-01{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .content-01 img{
+        margin: auto;
+    }
+}

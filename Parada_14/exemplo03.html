@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo 03</title>
+    <style>
+        body{
+            background: #fcdeb3;
+        }
+        .container{
+            display: flex;
+            border: 2px dashed #000000;
+            background-color: #ffffff;
+        }
+        .box{
+            background-color: #c2d7ff;
+            width: 250px;
+            margin: 5px;
+            padding: 10px;
+            text-align: justify;
+        }
+        @media screen and (max-width: 580px){
+            .container{
+                flex-direction: column;
+            }
+            .box{
+                width: auto;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h2>título</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+          amet consectetur? Voluptatibus necessitatibus laudantium ab aperiam
+          fugit nesciunt labore aliquam. Hic quo iusto necessitatibus dolore
+          autem, ipsa facilis totam iure!
+        </p>
+      </div>
+      <div class="box">
+        <h2>título</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+          amet consectetur? Voluptatibus necessitatibus laudantium ab aperiam
+          fugit nesciunt labore aliquam. Hic quo iusto necessitatibus dolore
+          autem, ipsa facilis totam iure!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

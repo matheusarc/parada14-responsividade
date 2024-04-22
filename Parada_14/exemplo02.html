@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo 02</title>
+    <style>
+        .box{
+            margin: auto;
+            width: 150px;
+            height: 150px;
+            background-color: #ff6347;
+        }
+        /* TELA DE TABLET */
+        @media screen and (max-width: 760px){
+            .box{background-color: #e9e92a;}
+        }
+        /* TELA DE CELULAR */
+        @media screen and (max-width: 320px){
+            .box{background-color: #2929e0;}
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
